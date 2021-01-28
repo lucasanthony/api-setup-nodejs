@@ -1,0 +1,40 @@
+{
+  "name": "gria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=prod node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=dev nodemon src/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "module-alias": "^2.2.2",
+    "mongoose": "^5.11.13",
+    "nodemailer": "^6.4.17",
+    "nodemon": "^2.0.7"
+  },
+  "_moduleAliases": {
+    "@": "src",
+    "@app": "src/app.js",
+    "@config": "src/config/index.js",
+    "@controller": "src/controller",
+    "@service": "src/service",
+    "@helper": "src/helper",
+    "@model": "src/model"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "eslint": "^7.18.0",
+    "mongodb-memory-server": "^6.9.3"
+  }
+}

@@ -1,0 +1,22 @@
+version: "3"
+services:
+  mongo:
+    container_name: mongo-container
+    image: mongo:3
+    restart: always
+    ports:
+      - "27017:27017"
+  backend-node:
+    container_name: back-end-node
+    build: .
+    image: backend-node
+    restart: always
+    command: npm run dev
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+
+networks:
+  backend:
+    driver: bridge
