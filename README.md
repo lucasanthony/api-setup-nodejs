@@ -6,6 +6,8 @@
 ### Como utilizar
 > git clone https://github.com/lucasanthony/api-setup-nodejs.git
 
+> npm install
+
 > Setar a DB_URL_PROD e DB_URL_DEV do .env
 
 > npm start ou npm run dev
