@@ -1,14 +1,20 @@
-Projeto backend.
+## Setup base para uma API em NodeJS
+
+* Dependências básicas necessárias
+* Dependências para testes de integração e unidade
+
+### Como utilizar
+> git clone https://github.com/lucasanthony/api-setup-nodejs.git
+
+> npm install
+
+> Setar a DB_URL_PROD e DB_URL_DEV do .env
+
+> npm start ou npm run dev
 
 Versions:
 - Node.js = 12.20.1
 - Npm = 6.14.10
-
-# Setup MongoDb
-
-> `sudo apt-get update`
-
-> `sudo apt-get install -y mongodb-org`
 
 # Setup NodeJS
 
@@ -36,9 +42,6 @@ Versions:
 # Generating Images
 
 ## path : root
-
-## Change -> path : .env
-* DATA_BASE_NOSQL_URL = 'mongodb://mongo:27017/griadb'
 
 > `sudo docker-compose up`
 
